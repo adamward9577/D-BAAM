@@ -1,4 +1,4 @@
-function [Pu_c,Re_c,WC,E_n] = BLAM(Para1,Para2,PH,PINT,PL,T,w,m,V,e,yc_feed)
+function [Pu_c,Re_c,WC,E_n] = DBAAM(Para1,Para2,PH,PINT,PL,T,w,m,V,e,yc_feed)
 % Calculate the process KPIs using the BLAM model
 
 W_BLO = 0; % Blwodown work [kWh]
