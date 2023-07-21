@@ -24,7 +24,7 @@ yc_c = yc(idx);
 
 % RHS functions of system of non-linear algebraic equations
 F(1) = (PL - PH) * V * e ./ (R * T) + m * (qc_c + qn_c - qc_d - qn_d) + x(1);
-F(2) = (yc_c * PL + x(2) * PH) * V * e ./ (R * T) + m * (qc_c - qc_d) + x(1) * x(2);
+F(2) = (yc_c * PL - x(2) * PH) * V * e ./ (R * T) + m * (qc_c - qc_d) + x(1) * x(2);
 F(3) = m * (qc_d + qn_d - qc_a - qn_a) + x(3) - x(4);
 F(4) = (x(2) - yc_feed) * PH * V * e ./ (R * T) + m * (qc_d - qc_a) + x(3) * yc_feed - x(4) * x(2);
 
